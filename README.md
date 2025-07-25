@@ -44,3 +44,9 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
+
+
+
+<img width="630" height="494" alt="image" src="https://github.com/user-attachments/assets/73a46ebd-ea7c-448e-8351-401b56b04735" />
+
