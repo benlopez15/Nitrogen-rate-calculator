@@ -31,8 +31,8 @@ ui <- fluidPage(
 server <- function(input, output) {
   observeEvent(input$calculate, {
     rate <- ifelse(input$fertilizerType == "Urea",
-                   round(input$fert / .46, 1),  # Urea typically has 46% nitrogen
-                   round(input$fert / .34, 1))  # Ammonium nitrate typically has 34% nitrogen
+                   round(input$fert / .46, 1),
+                   round(input$fert / .34, 1))
     
     totalN <- rate * input$area  # Calculate total nitrogen needed
     output$result <- renderText({
